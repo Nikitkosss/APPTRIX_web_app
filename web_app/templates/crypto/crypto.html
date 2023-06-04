@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block title %}Данные о криптовалютах{% endblock title %}
+{% block content %}
+  <div class="container py-5">
+    <h1>Последние данные по криптовалюте</h1>
+    <article>
+      {% for coin in coins %}
+      <ul>
+        <li>
+          Наименование монеты:  <a>{{ coin.name }}</a>
+        </li>
+        <li>
+          Символьный код:  <a>{{ coin.code }}</a>
+        </li>
+        <li>
+          Текущий курс:  <a>{{ coin.price }}</a>
+        </li>
+        <li>
+          Объем торгов:  <a>{{ coin.total_supply }}</a>
+        </li>
+        <li>
+          % изменения за 24 часа:  <a>{{ coin.percent_change }}</a>
+        </li>
+        <li>
+          Дата последнего обновления:  <a>{{ coin.timestamp }}</a>
+        </li>
+      </ul> 
+      {% endfor %}
+    </article>
+  </div>
+{% endblock %}

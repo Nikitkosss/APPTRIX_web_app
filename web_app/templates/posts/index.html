@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}Последние новости{% endblock title %}
+{% block content %}
+  <div class="container py-5">
+    <h1>Новости</h1>
+    <article>
+      {% for n in news %}
+      <ul>
+        <li>
+          Автор:  <a>{{ n.author }}</a>
+        </li>
+        <li>Дата публикации: {{ n.published }}</li>
+        <li>{{ n.title }}</li>
+        <p>{{ n.description }}</p>
+      </ul> 
+      {% endfor %}
+    </article>
+  </div>
+{% endblock %}
