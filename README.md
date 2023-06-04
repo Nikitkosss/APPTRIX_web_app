@@ -1,9 +1,5 @@
 # Проект тестового задания
 
-pip install python-coinmarketcap
-pip install newsapi-python
-
-
 ## Разработчик:
 
 - :sunglasses: [Никита Пискунов](https://github.com/Nikitkosss)
@@ -50,11 +46,11 @@ API должно иметь следующие методы:
 Клонируйте репозиторий и перейдите в него в командной строке:
 
 ```
-git clone git@github.com:Nikitkosss/api_yamdb.git
+git@github.com:Nikitkosss/APPTRIX_web_app.git
 ```
 
 ```
-cd api_yamdb
+cd APPTRIX_web_app
 ```
 
 Cоздайте и активируйте виртуальное окружение.
@@ -77,10 +73,10 @@ python -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-Перейдите в папку api_yamdb/api_yamdb:
+Перейдите в папку APPTRIX_web_app/web_app:
 
 ```
-cd api_yamdb/api_yamdb
+cd APPTRIX_web_app/web_app
 ```
 
 Примените миграции:
@@ -98,5 +94,3 @@ python manage.py migrate
 ```
 python manage.py runserver
 ```
-
-Подробная документация проекта будет доступна по адресу http://127.0.0.1:8000/redoc/
